@@ -5,6 +5,9 @@
   font-variation-settings:
     "wdth" 100;
 }
+body{
+    display:grid;
+}
 .text-primary{
     color:#FD6E0A;
     font-weight: 800;
@@ -174,6 +177,20 @@ footer input[type="text"], footer input[type='email'],footer textarea{
 }
  span{
     color:red;
+}
+
+@media screen and(max-width:576px) {
+    body{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .skills-container, .resume-container, footer{
+        flex-direction: column;
+    }
+    
 }
 
 
